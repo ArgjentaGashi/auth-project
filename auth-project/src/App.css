@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* ------ Homepage ------ */
+.login-button{
+  padding: 6px 44px;
+  background-color: transparent;   
+  border: 2px solid #8F9672 ;
+  color: #8F9672;
+}
+.login-button:hover {
+  margin-top: -5px;
+  margin-bottom: 5px;
+  transition-duration: 300ms;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.left-container{
+  background-color: #8F9672;
+  width: 50%;       
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E7D6C5;
+  width: 50%;
+  height: 100vh;
+}
+.right-inner-container {
+  width: 60%;
+}
+.right-inner-container h3 {
+  font-family: 'Passions Conflict', cursive;
+  font-size: 60px;
+  font-weight: 100;
+  margin-bottom: 0px;
+  color: #B29075;
+}
+.right-inner-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+}
+.right-inner-container p {
+  margin: 25px auto;
+}
+.link{
+  color: #8F9672;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* .link:hover{
+  color: #E7D6C5;
+} */
+/* ------ Profile Page ------- */
+
+.profile-container {
+  font-family: 'Poppins', sans-serif;
+  font-weight: light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #8F9672, #f1e8de);
+}
+
+.profile-details {
+  /* text-align: center; */
+  padding: 30px 30px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.3);
+}
+
+.profile-details h2 {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.userLabel {
+  font-size: 14px;
+  padding-top: 20px;
+  color: #949494;
+}
+
+.logOutBtn {
+  font-size: 16px;
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px 12px;
+  background-color: #f1e8de;
+  color: rgb(81, 80, 80);
+  border: 1px solid #918679 ;
+  border-radius: 10px;
+  transition-duration: 300ms;
+
+}
+
+.logOutBtn:hover {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  transition-duration: 300ms;
+}
+/* ------Profile if not logged in-------- */
+.if-not-logged-in{
+  font-family: 'Poppins', sans-serif;
+  font-weight: light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #8F9672, #f1e8de);
+}
+.if-not-logged-in div{
+  padding: 30px 30px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.3);
+  width: 15%;
+}
+.if-not-logged-in button{
+  font-size: 16px;
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px 12px;
+  background-color: #f1e8de;
+  color: rgb(81, 80, 80);
+  border: 1px solid #918679 ;
+  border-radius: 10px;
+  transition-duration: 300ms;
+}
+.if-not-logged-in button:hover{
+  margin-top: 25px;
+  margin-bottom: 5px;
+  transition-duration: 300ms;
+}
+.if-not-logged-in h2{
+  font-weight: 500;
+  font-size: 18px;
+}
