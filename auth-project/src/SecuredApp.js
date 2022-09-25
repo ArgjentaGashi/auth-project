@@ -26,9 +26,11 @@ function SecuredApp() {
     if (authService.isPending()) { 
         console.log(fromHomepage);
         if (fromHomepage) {
-            return <div>
-                {login()}
-            </div>
+            setTimeout(() => {
+                return <div>
+                    {login()}
+                </div>
+                }, 50);
         }
         else {
             return <div className='if-not-logged-in'>
@@ -45,9 +47,11 @@ function SecuredApp() {
 
     if (!authService.isAuthenticated()) { 
         if (fromHomepage) {
+            setTimeout(() => {
             return <div>
                 {login()}
             </div>
+            }, 50);
         }
         else {
             return (
@@ -61,8 +65,8 @@ function SecuredApp() {
         }
     }
 
-    if (authService.isAuthenticated) {
-        return(
+    if (Object.keys(JSON.stringify(authService.getAuthTokens())).length>2){
+            return(
             <div className='profile-container'>
                 <div className='profile-details'>
                 <h2>Hello, {JSON.stringify(authService.getUser().name).slice(1, -1)}</h2>
